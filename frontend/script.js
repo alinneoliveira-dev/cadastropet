@@ -16,7 +16,7 @@ document.getElementById("petForm").addEventListener("submit", function (e) {
     banho: form.get("banho"),
     historico: form.get("historico"),
     observacoes: form.get("observacoes"),
-    imagem: "", // simplificado, não armazena imagem no localStorage
+    imagem: "", 
     tutorId: form.get("tutorId"),
   };
 
