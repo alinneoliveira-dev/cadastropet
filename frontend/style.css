@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .background {
+    background: url('imagens/gato.jpg') no-repeat center center/cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.7);
+  }
+  
+  .form-container {
+    width: 90%;
+    max-width: 470px;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 30px 0 30px auto; /* empurra para a direita */
+    margin-right: 5%;         /* define a distância da borda direita */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    
+  }
+  
+  
+  form h2 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  .site-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8px 30px;
+    background-color: rgba(136, 129, 129, 0.7);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    color: #d82a0b;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .form-box {
+    background: #ffffffdd;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-box label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .form-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  
+  
+  

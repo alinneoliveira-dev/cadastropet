@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Pets</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="imagens/favicon.png">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="form-container">
+    <form id="petForm">
+        <header class="site-header">
+            <div class="logo">🐾 Pet AuMigos</div>
+            <nav class="nav-links">
+              <a href="cadastro-tutor.html">Novo Tutor</a>
+              <a href="cadastro-pet.html">Pets</a>
+              <a href="resultado.html">Pets & Tutores</a>
+          </header>
+      <h2>Cadastro de Pet</h2>
+
+      <label>Nome do Pet:</label>
+      <input type="text" name="nome" required />
+
+      <label>Espécie:</label>
+      <select name="especie" id="especie" onchange="checkOutraEspecie(this)">
+        <option value="">Selecione</option>
+        <option value="Cão">Cão</option>
+        <option value="Gato">Gato</option>
+        <option value="Outro">Outro</option>
+      </select>
+      <input type="text" name="outraEspecie" id="outraEspecie" placeholder="Informe a espécie" style="display: none;" />
+
+      <label>Raça:</label>
+      <input type="text" name="raca" required />
+
+      <label>Idade (até 12 anos):</label>
+      <input type="number" name="idade" min="0" max="12" required />
+
+      <label>Sexo:</label>
+      <select name="sexo">
+        <option value="Macho">Macho</option>
+        <option value="Fêmea">Fêmea</option>
+      </select>
+
+      <label>Castrado:</label>
+      <select name="castrado">
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <label>Antipulgas:</label>
+      <input type="text" name="antipulgas" />
+
+      <label>Medicamentos:</label>
+      <input type="text" name="medicamentos" />
+
+      <label>Banho de saída:</label>
+      <select name="banho">
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <label>Histórico do Pet:</label>
+      <textarea name="historico"></textarea>
+
+      <label>Observações:</label>
+      <textarea name="observacoes"></textarea>
+
+      <label>Imagem do Pet:</label>
+      <input type="file" name="imagem" accept="image/*" />
+
+      <input type="hidden" name="tutorId" id="tutorId" />
+
+      <button type="submit">Cadastrar Pet</button>
+    </form>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

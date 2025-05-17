@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pets & Tutores</title>
+  <link rel="stylesheet" href="resultado.css" />
+  <link rel="icon" type="image/png" href="imagens/favicon.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">🐾 Pet AuMigos</div>
+    <nav class="nav-links">
+      <a href="cadastro-tutor.html">Novo Tutor</a>
+      <a href="cadastro-pet.html">Pets</a>
+      <a href="resultado.html">Pets & Tutores</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Buscar Pet</h1>
+
+    <!-- Formulário de busca por CPF -->
+    <form id="form-busca" onsubmit="return false;">
+      <input type="text" id="busca" placeholder="Digite o CPF do tutor" required />
+      <button type="button" id="buscar-btn">Buscar</button>
+    </form>
+
+    <!-- Área onde os resultados serão inseridos dinamicamente -->
+    <div id="resultados"></div>
+  </div>
+
+    <button id="downloadBtn">Baixar Ficha em PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+
+<script src="resultado.js"></script>
+</body>
+</html>
