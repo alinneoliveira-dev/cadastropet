@@ -1,4 +1,4 @@
-# CadastroPet - Projeto PetAumigos 🐾
+# Projeto PetAumigos 🐾
 
 Sistema web para cadastro e gerenciamento de tutores e pets, voltado para empresas e organizações do setor pet, como clínicas veterinárias, pet shops e ONGs.
 
