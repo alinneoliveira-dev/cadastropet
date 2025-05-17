@@ -1,0 +1,18 @@
+# Java / Gradle
+.gradle/
+build/
+out/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
